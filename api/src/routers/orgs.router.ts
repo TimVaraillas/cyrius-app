@@ -1,9 +1,14 @@
-const express = require('express');
+import { Router } from "express";
+import * as controller from "~/controllers/orgs.controller";
 
-const OrgsRouter = express.Router({ mergeParams: true });
+const router = Router({ mergeParams: true });
 
-OrgsRouter.get('/orgs', (req: any, res: any) => {
-  res.send('Coucou');
-});
+router.get("/orgs", controller.getOrgs);
+router.get("/orgs/:orgId", controller.getOrgsById);
+router.get("/orgs/:orgId/users", controller.getUsersByOrgId);
+router.get("/orgs/:orgId/labels", controller.getLabelsByOrgId);
+router.post("/orgs/:orgId/labels", controller.createLabelByOrgId);
+router.patch("/orgs/:orgId/users/:uid", controller.updateUserByOrgAndUserId);
+router.delete("/orgs/:orgId/users/:uid", controller.deleteUserByOrgAndUserId);
 
-export { OrgsRouter };
+export default router;

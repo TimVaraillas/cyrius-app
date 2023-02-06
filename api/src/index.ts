@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors"
 import { config } from '~/config';
 
-import { OrgsRouter } from "~/routers/orgs.router"
+import OrgsRouter from "~/routers/orgs.router"
 
 import { ExceptionsHandler } from '~/handlers/exceptions.handler'
 import { NotFoundHandler } from '~/handlers/notFound.handler'

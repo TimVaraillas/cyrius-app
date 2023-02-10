@@ -27,7 +27,7 @@ const onRemoveUserClick = (user: User) => {
         <tr>
           <th scope="col" class="p-4" width="150">First name</th>
           <th scope="col" class="p-4" width="150">Last name</th>
-          <th scope="col" class="p-4" width="400">Email</th>
+          <th scope="col" class="p-4" width="275">Email</th>
           <th scope="col" class="p-4" width="300">Org</th>
           <th scope="col" class="p-4" width="auto">Labels</th>
           <th scope="col" class="p-4" width="170">Actions</th>
@@ -48,7 +48,7 @@ const onRemoveUserClick = (user: User) => {
           <td class="px-4 py-3" width="150">
             {{ user.last_name }}
           </td>
-          <td class="px-4 py-3" width="400">
+          <td class="px-4 py-3" width="275">
             {{ user.email }}
           </td>
           <td class="px-4 py-3" width="300">
@@ -103,7 +103,7 @@ const onRemoveUserClick = (user: User) => {
 <style scoped>
 tbody {
   display: block;
-  height: calc(100vh - 148px);
+  height: calc(100vh - 210px);
   overflow: auto;
 }
 thead,

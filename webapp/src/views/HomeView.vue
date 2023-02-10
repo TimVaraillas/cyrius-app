@@ -110,7 +110,7 @@ const onUserEdited = async (user: User) => {
     </div>
     <div
       class="side-panel flex flex-col border-l-2 border-slate-200 w-0 transition-all overflow-hidden"
-      :class="{ opened: sideMenuOpened }"
+      :class="{ 'w-1/3': sideMenuOpened }"
     >
       <div v-show="sideMenuOpened">
         <div class="top-bar p-4 flex justify-between">
@@ -178,9 +178,5 @@ const onUserEdited = async (user: User) => {
 <style scoped>
 .view-container {
   height: calc(100vh - 60px);
-}
-
-.side-panel.opened {
-  width: 33vw;
 }
 </style>

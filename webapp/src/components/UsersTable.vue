@@ -33,7 +33,9 @@ const onRemoveUserClick = (user: User) => {
           <th scope="col" class="p-4" width="170">Actions</th>
         </tr>
       </thead>
-      <tbody class="rounded-b border-l border-r border-b">
+      <tbody
+        class="rounded-b border-l-2 border-r-2 border-b-2 border-slate-200"
+      >
         <tr
           v-for="user in props.users"
           :key="user.id"

@@ -13,9 +13,20 @@ import {
   faXmark,
   faCheck,
   faChevronDown,
+  faChevronRight,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faEye, faEdit, faTrash, faXmark, faCheck, faChevronDown);
+library.add(
+  faEye,
+  faEdit,
+  faTrash,
+  faXmark,
+  faCheck,
+  faChevronDown,
+  faChevronRight,
+  faHome
+);
 
 const app = createApp(App);
 

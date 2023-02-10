@@ -72,14 +72,41 @@ const onUserEdited = async (user: User) => {
 
 <template>
   <div class="view-container flex">
-    <div class="main-panel grow p-5">
-      <UsersTable
-        v-if="users"
-        :users="users"
-        @view-user="onViewUserClick"
-        @edit-user="onEditUserClick"
-        @remove-user="onRemoveUserClick"
-      />
+    <div class="main-panel grow bg-slate-100">
+      <nav
+        class="px-8 py-4 flex bg-white border-b-2 border-slate-200"
+        aria-label="Breadcrumb"
+      >
+        <ol
+          class="inline-flex items-center space-x-1 md:space-x-3 text-slate-500"
+        >
+          <li class="inline-flex items-center">
+            <a href="/" class="inline-flex items-center text-sm">
+              <font-awesome-icon class="mr-2" icon="fa-solid fa-home" />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <font-awesome-icon
+                class="text-xs mr-2 mt-0.5"
+                icon="fa-solid fa-chevron-right"
+              />
+              <a href="/" class="ml-1 text-sm">Users table</a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="p-5">
+        <UsersTable
+          v-if="users"
+          :users="users"
+          @view-user="onViewUserClick"
+          @edit-user="onEditUserClick"
+          @remove-user="onRemoveUserClick"
+        />
+      </div>
     </div>
     <div
       class="side-panel flex flex-col border-l-2 border-slate-200 w-0 transition-all overflow-hidden"

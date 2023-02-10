@@ -1,13 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeView from "@/views/HomeView.vue";
+
+const src = "https://cyrius.co/lib_UYJACBFvKjyflrmM/02hmuy6s42ggz8hd.png?w=40";
+</script>
 
 <template>
-  <header></header>
+  <header
+    class="header flex items-center justify-between px-8 border-b-2 border-slate-200"
+  >
+    <a href="/" class="flex items-center">
+      <img :src="src" alt="Logo Cyrius" />
+      <h1 class="px-5 font-bold tracking-wide uppercase text-slate-600">
+        Cyrius technical test
+      </h1>
+    </a>
+  </header>
 
   <main>
-    <h2 class="text-2xl font-bold text-blue-800">
-      Project with Vite, Vue 3 & Tailwind CSS
-    </h2>
+    <HomeView />
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+  height: 60px;
+}
+</style>

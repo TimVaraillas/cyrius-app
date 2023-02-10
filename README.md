@@ -1,5 +1,27 @@
 # Backoffice vue users
 
+## Démarrage de l'application
+
+### Serveur
+
+Lancer le serveur (Express + Typescript) : 
+
+```
+cd ./api
+npm install
+npm run dev
+```
+
+### Application web
+
+Lancer l'application (Vite + Vue 3 + Typescript) :
+
+```
+cd ./webapp
+npm install
+npm run dev
+```
+
 ## Models schemas
 
 + Org : 

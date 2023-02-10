@@ -119,7 +119,6 @@ export const createLabelByOrgId: RequestHandler =  async (req, res, next) => {
 
   writeDB(db)
     .then((data) => {
-      console.log(data)
       return res.send({ 
         meta: {
           saved: db.orgs[orgIdx]

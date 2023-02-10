@@ -118,10 +118,10 @@ Cette vue est un tableau qui liste les utilisateurs sans distinction d'organisat
 
 + Lorsque l'ops clique sur la ligne de l'utilisateur (ou sur le bouton d'affichage de la colonne `action`), un vertical menu s'ouvre à droite avec les données en readonly 
 
-+ Lorsque l'ops clique sur le bouton d'affichage de la colonne `action` ou sur le bouton d'édition en bas du menu, les données deviennent éditables (sauf l'id).
++ Lorsque l'ops clique sur le bouton d'edition de la colonne `action` ou sur le bouton d'édition en bas du menu, les données deviennent éditables (sauf l'id).
 Le formulaire s'il est `dirty` peut-être soumis à l'API via un bouton `Modifier`.
 
-+ Lorsque l'ops clique sur le bouton de supression de la colonne `action` ou sur le bouton de supression en bas du menu, l'utilisateur doit être supprimé. Lorsque l'utilisateur est supprimé le menu se ferme, et le menu se met à jour dès le retour de l'API.
++ Lorsque l'ops clique sur le bouton de supression de la colonne `action` ou sur le bouton de supression en bas du menu, l'utilisateur doit être supprimé. Lorsque l'utilisateur est supprimé le menu se ferme, et le tableau se met à jour dès le retour de l'API.
 
 + Quand le menu est ouvert, on voit encore le tableau users donc le vertical menu doit être mis à jour si on clique sur un autre utilisateur (avec les données en read only)
 
